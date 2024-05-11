@@ -1,32 +1,32 @@
-# Prerequisites
-*.d
+# Игнорировать файлы конфигурации Editor
+.editorconfig
 
-# Compiled Object files
-*.slo
-*.lo
-*.o
-*.obj
+# Игнорировать файлы настроек Visual Studio Code
+.vscode/
 
-# Precompiled Headers
-*.gch
-*.pch
+# Игнорировать файлы зависимостей
+**/node_modules/
 
-# Compiled Dynamic libraries
-*.so
-*.dylib
-*.dll
+# Игнорировать локальные настройки npm
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
 
-# Fortran module files
-*.mod
-*.smod
+# Игнорировать файлы сгенерированных исходных кодов
+**/build/
+**/dist/
 
-# Compiled Static libraries
-*.lai
-*.la
-*.a
-*.lib
+# Игнорировать файлы конфигурации npm
+package-lock.json
+yarn.lock
 
-# Executables
-*.exe
-*.out
-*.app
+# Игнорировать временные файлы
+*.log
+*.tmp
+
+# Игнорировать файлы системы оперативной памяти
+*.pnp.js
+.pnp.js
+
+# Игнорировать временные файлы созданные редакторами
+*~
