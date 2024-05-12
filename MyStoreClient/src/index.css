@@ -2,3 +2,16 @@ body
 {
     margin: 0px;
 }
+
+::-webkit-scrollbar
+{
+    background-color: rgb(25, 25, 25);
+    scrollbar-width: thin;
+}
+
+::-webkit-scrollbar-thumb
+{
+    background-color: white;
+    border-radius: 50px;
+}
+
