@@ -4,7 +4,8 @@ export default function Body()
 {
     return(
         <div className='Body'>
-            body
+            <div className='Products'>0</div>
+            <div className='Order'>1</div>
         </div>
     )
 }
