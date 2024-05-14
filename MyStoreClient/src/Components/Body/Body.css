@@ -1,19 +1,16 @@
-.Body
-{
+.Body {
     width: 100%;
     height: 100vh;
     position: relative;
 }
 
-.Products, .Order
-{
-    position: absolute;
+.Products, .Order {
+    position: absolute; 
     width: 100%;
     height: 100%;
 }
 
-.Order
-{
+.Order {
     display: none;
 }
 
