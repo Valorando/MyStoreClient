@@ -22,24 +22,26 @@ export default function Body()
 
     return (
         <div className='Body'>
-            <div className='Products'>
-                {products !== null ? (
-                    <div>
-                        {products.map((product, index) => (
-                            <div className='ProductItem' key={index}>
-                                <p>Product ID: {product.productId}</p>
-                                <p>Name: {product.name}</p>
-                                <p>Amount: {product.amount}</p>
-                                <p>Price: {product.price}</p>
-                                <button id='buy'>Buy</button>
-                            </div>
-                        ))}
-                    </div>
-                ) : (
-                    'Loading...'
-                )}
-            </div>
-            <div className='Order'>1</div>
-        </div>
+    <div id='Products'>
+        {products !== null ? (
+            products.map((product, index) => (
+                <div id={`ProductItem${index + 1}`} key={index}>
+                    <p id='article'>article: {product.productId}</p>
+                    <p id='name'>{product.name}</p>
+                    <p id='amount'>amount: {product.amount}</p>
+                    <p id='price'>{product.price}</p>
+                    <button id={`BuyButton${index + 1}`}>Buy</button>
+                </div>
+            ))
+        ) : (
+            Array.from({length: products ? products.length : 0}, (_, index) => (
+                <div id={`ProductItem${index + 1}`} key={index}></div>
+            ))
+        )}
+    </div>
+
+    <div id='Order'>1</div>
+</div>
+
     );
 }
